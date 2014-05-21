@@ -61,10 +61,12 @@ echo html_writer::tag('p', get_string('select_desc', 'tinymce_mediagallery'));
 $options = collection::get_public_galleries_by_contextid($contextid);
 echo html_writer::tag('label', get_string('gallery', 'mediagallery'), array('for' => 'gallery_select')).':&nbsp;';
 echo html_writer::select($options, 'gallery', '', array(), array('id' => 'gallery_select'));
+$strins = get_string('common:insert', 'editor_tinymce');
+$strcan = get_string('cancel');
 ?>
     <div class="mceActionPanel">
-    <input type="submit" id="insert" name="insert" value="<?php print_string('common:insert', 'editor_tinymce'); ?>" onclick="return MediagalleryDialog.insert();" />
-        <input type="button" id="cancel" name="cancel" value="<?php print_string('cancel'); ?>" onclick="return tinyMCEPopup.close();" />
+    <input type="submit" id="insert" name="insert" value="<?php echo $strins; ?>" onclick="return MediagalleryDialog.insert();" />
+    <input type="button" id="cancel" name="cancel" value="<?php echo $strcan; ?>" onclick="return tinyMCEPopup.close();" />
     </div>
 </form>
 </body>

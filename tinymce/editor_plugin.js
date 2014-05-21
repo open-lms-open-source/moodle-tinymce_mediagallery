@@ -17,8 +17,8 @@
             ed.addCommand('mceMediagallery', function() {
                 ed.windowManager.open({
 
-                    file : ed.getParam("moodle_plugin_base") + 'mediagallery/mediagallery.php?lang=' + lang
-                        + '&sesskey=' + M.cfg.sesskey + '&contextid=' + ed.getParam('contextid'),
+                    file : ed.getParam("moodle_plugin_base") + 'mediagallery/mediagallery.php?lang=' + lang +
+                        '&sesskey=' + M.cfg.sesskey + '&contextid=' + ed.getParam('contextid'),
                     width : 340,
                     height : 110,
                     inline : 1
@@ -33,7 +33,6 @@
                 cmd : 'mceMediagallery',
                 image : url + '/img/icon.gif'
             });
-
 
             // Add a node change handler, selects the button in the UI when a image is selected.
             ed.onNodeChange.add(function(ed, cm, n) {

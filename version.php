@@ -28,3 +28,5 @@ $plugin->version   = 2014012100;
 $plugin->requires  = 2013050100;
 $plugin->component = 'tinymce_mediagallery';
 $plugin->dependencies = array('mod_mediagallery' => 2014010400);
+$plugin->maturity = MATURITY_STABLE;
+$plugin->release = '2.5.1.0';
