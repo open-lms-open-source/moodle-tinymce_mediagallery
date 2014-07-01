@@ -20,7 +20,7 @@
                     file : ed.getParam("moodle_plugin_base") + 'mediagallery/mediagallery.php?lang=' + lang +
                         '&sesskey=' + M.cfg.sesskey + '&contextid=' + ed.getParam('contextid'),
                     width : 340,
-                    height : 110,
+                    height : 140,
                     inline : 1
                 }, {
                     plugin_url : url, // Plugin absolute URL
