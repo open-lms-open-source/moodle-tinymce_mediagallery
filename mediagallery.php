@@ -58,7 +58,7 @@ header('X-UA-Compatible: IE=edge');
 <?php
 echo html_writer::tag('p', get_string('select_desc', 'tinymce_mediagallery'));
 
-$options = collection::get_public_galleries_by_contextid($contextid);
+$options = collection::get_my_galleries_by_contextid($contextid);
 echo html_writer::tag('label', get_string('gallery', 'mediagallery'), array('for' => 'gallery_select')).':&nbsp;';
 echo html_writer::select($options, 'gallery', '', array(), array('id' => 'gallery_select', 'style' => 'max-width: 270px;'));
 $strins = get_string('common:insert', 'editor_tinymce');
